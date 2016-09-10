@@ -1,0 +1,140 @@
+body {
+    margin: 0; padding: 0;
+    overflow: hidden;
+    color: #fff;
+    background: white;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 40 40px;
+}
+a:hover {
+    text-decoration: none;
+    text-shadow: 0 0 5px #BFE0E8 , 0 0 5px #2EFF53 , 0 0 5px #E82917;
+}
+#container {
+    position: relative;
+    top: 0;
+    transition: top 1.4s cubic-bezier(.49,.22,.52,1.35);
+}
+#nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    padding: 1em 0;
+    margin: 0;
+    text-align: center;
+    background: #332C2C ;
+}
+#nav li {
+    display: inline;
+    margin:0;
+}
+#nav a {
+    display: inline-block;
+    margin: 0 3em;
+    transition: all 1s;
+}
+#price1, #price2, #price3 {
+    height:1000px;
+    padding-top: 50px;
+    transition: background-position 1.4s  cubic-bezier(.49,.22,.52,1.35);
+}
+
+#price1 {
+    background:url(red2.png) center 0 no-repeat fixed;
+}
+#price2 {
+    background:url(Gofri.png) center 0 no-repeat fixed;
+}
+#price3 {
+    background:url(Studio.png) center 0 no-repeat fixed;
+}
+.price_inside {
+    width: 20%;
+    margin: 0 auto;
+    position: relative;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 50px;
+}
+
+#price1 .price_inside {
+    text-align: center;
+    width: 20%;
+    height: 400px;
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    position: absolute;
+}
+#price2 .price_inside {
+    margin-top: 85px;
+}
+#price2 .price_inside p {
+    height: 400px;
+    width: 20%;
+    margin-top: 85px;
+    text-align: justify;
+}
+#price3 .price_inside {
+    width: 20%;
+    height: 400px;
+    margin-top: 120px;
+    margin-left: 60%;
+    margin-bottom: 5%;
+    position: absolute;
+}
+#price3 .price_inside h2 {
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+#e2:target ~ #container {
+    top:-1000px;
+}
+#e2 #price1 {
+    background-position: 50% 36%;
+}
+#e2: #container #price2 {
+    background-position: 50% 0%;
+}
+#e2: #container #price3 {
+    background-position: 50% -30%;
+}
+#e1:target ~ #container {
+    top:0px;
+}
+#e1:target ~ #container #price1 {
+    background-position: 50% 0%;
+}
+#e1:target ~ #container #price2 {
+    background-position: 50% -35%;
+}
+#e1:target ~ #container #price3 {
+    background-position: 50% -60%;
+}
+#e3:target ~ #container {
+    top:-2150px;
+}
+#e3:target ~ #container #price1 {
+    background-position: 50% 60%;
+}
+#e3:target ~ #container #price2 {
+    background-position: 50% 35%;
+}
+#e3:target ~ #container #price3 {
+    background-position: 50% 0%;
+}
+.titre{
+    font-family: 'Oswald', sans-serif;
+}
+.sousTitre{
+    font-family: 'Lora', serif;
+}
+.list_a_puce{
+    font-family: 'Inconsolata', monospace;
+}
+.lien{
+    padding-top:100px;
+}
